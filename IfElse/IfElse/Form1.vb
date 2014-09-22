@@ -17,6 +17,11 @@ Public Class Form1
         num1 = CDbl(st1)
         num2 = CDbl(st2)
 
+        If Not (num1 >= 0 And num2 >= 0) Then
+            MessageBox.Show("Please input a positive number!")
+            Return
+        End If
+
         Dim result As String
 
         If num1 > num2 Then
